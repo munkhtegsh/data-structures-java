@@ -1,6 +1,7 @@
 package com.company;
 
 public class Main {
+
     public static void main(String args[]) {
         NodePlayground a = new NodePlayground(9);
         NodePlayground b = new NodePlayground(8, a);
@@ -8,7 +9,7 @@ public class Main {
         NodePlayground d = new NodePlayground(4, c);
         NodePlayground currentNode = d;
 
-        while(currentNode.next != null) {
+        while (currentNode.next != null) {
             System.out.print(currentNode.data);
             currentNode = currentNode.next;
         }
@@ -20,7 +21,7 @@ public class Main {
         NodePlayground secondNode = firstNode.next;
         NodePlayground currentNode = secondNode;
 
-        while(currentNode != null) {
+        while (currentNode != null) {
             System.out.println(currentNode.data);
             currentNode = currentNode.next;
         }
