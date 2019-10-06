@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Arrays;
-import java.util.concurrent.atomic.DoubleAccumulator;
 
 public class HomeworkM5Driver {
 
