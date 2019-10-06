@@ -8,14 +8,12 @@ public class Main {
         NodePlayground d = new NodePlayground(4, c);
         NodePlayground currentNode = d;
 
-//        while(currentNode.next != null) {
-//            System.out.print(currentNode.data);
-//            currentNode = currentNode.next;
-//        }
+        while(currentNode.next != null) {
+            System.out.print(currentNode.data);
+            currentNode = currentNode.next;
+        }
 
         method(d);
-
-
     }
 
     public static void method(NodePlayground firstNode) {
