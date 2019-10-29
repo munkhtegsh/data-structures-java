@@ -1,4 +1,6 @@
-import java.util.*; 
+package com.company;
+
+import java.util.*;
 
 public class ValuedRecursionExamples {
 

@@ -4,13 +4,13 @@ public class Node<T> {
 	
 	// public for testing purposes only!!
 	public T data; // element in the list
-	public Node<T> next; // link to next node
+	public Node next; // link to next node
 
 	public Node(T dataPortion) {
 		this(dataPortion, null);
 	} 
 
-	public Node(T dataPortion, Node<T> nextNode) {
+	public Node(T dataPortion, Node nextNode) {
 		data = dataPortion;
 		next = nextNode;
 	} 
@@ -21,21 +21,13 @@ public class Node<T> {
 
 	public void setData(T newData) {
 		data = newData;
-	}
-
-	@Override
-	public String toString() {
-		return "Node{" +
-				"data=" + data +
-				", next=" + next +
-				'}';
-	}
-
-	public Node<T> getNextNode() {
+	} 
+	
+	public Node getNextNode() {
 		return next;
 	} 
 
-	public void setNextNode(Node<T> nextNode) {
+	public void setNextNode(Node nextNode) {
 		next = nextNode;
 	} 
 } 

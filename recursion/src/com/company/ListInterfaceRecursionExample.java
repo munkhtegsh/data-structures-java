@@ -1,11 +1,6 @@
 package com.company;
 
-import com.company.AList;
-import com.company.ListInterface;
-import org.w3c.dom.Node;
-
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class ListInterfaceRecursionExample {
 
@@ -22,18 +17,18 @@ public class ListInterfaceRecursionExample {
 //		System.out.println(list.contains(5));
 
 
-		BagInterface<Integer> ll = new LinkedBag<>();
-		ll.add(1);
-		ll.add(2);
-		ll.add(2);
-		ll.add(3);
-		System.out.println(Arrays.toString(ll.toArray()));
+		BagInterface<Integer> bag = new LinkedBag<>();
+		bag.add(1);
+		bag.add(2);
+		bag.add(2);
+		bag.add(0);
+		bag.add(3);
+		System.out.println(Arrays.toString(bag.toArray()));
+//
+//		System.out.println(bag.getFrequencyOf(6));
 
-		System.out.println(ll.getFrequencyOf(6));
-
-		countPositives(ll);
-
-		ll.getFirstNode();
+		System.out.println(countPositives(bag));
+		System.out.println(Arrays.toString(bag.toArray()));
 
 
 
@@ -61,15 +56,14 @@ public class ListInterfaceRecursionExample {
 	public static int countPositives(BagInterface<Integer> bag) {
 		int count = 0;
 	    if (!bag.isEmpty()) {
-	        if (bag.firstNode.data > 0) {
-				int removedItem = bag.remove();
-				count = 1 + countPositives(bag);
-				bag.add(removedItem);
+			int removedEntry = bag.remove();
+			if (removedEntry > 0) {
+				count++;
 			}
+
+	    	count = count + countPositives(bag);
+	    	bag.add(removedEntry);
 		}
-
-	    return count;
+		return count;
 	}
-
-
 }

@@ -1,3 +1,4 @@
+package com.company;
 
 public class NodeRecursion {
 
@@ -44,9 +45,20 @@ public class NodeRecursion {
 			printCh(firstNode.next);
 			System.out.println(firstNode.data);
 		}
+	}
 
-
-
+	public static void recMethod(Node firstNode) {
+		System.out.println();
+		if(firstNode.next!=null) {
+		    System.out.println(firstNode.data);
+//		    firstNode = firstNode.data * 2;
+//			double the data in firstNode
+			recMethod(firstNode.next.next);
+		} else {
+		    System.out.println("Done");
+		}
+//		print the chain of nodes headed by firstNode
+		System.out.println(firstNode.toString());
 	}
 
 
