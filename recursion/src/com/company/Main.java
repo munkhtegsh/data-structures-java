@@ -35,6 +35,8 @@ public class Main {
 //        System.out.println("SUM : " + sum( 3));
 
         System.out.println(qNotFollowedByU("nonequuaqJ"));
+
+        System.out.println(sumUp(10,12));
     }
 
 
@@ -210,5 +212,13 @@ public class Main {
 //            return true;
 //        }
 //}
+
+    public static int sumUp(int n1, int n2) {
+        int sum = n1;
+        if(n1 < n2) {
+            sumUp(n1+1, n2);
+        }
+        return sum;
+    }
 
 }

@@ -260,7 +260,12 @@ public class AList<T extends Comparable<? super T>> implements ListInterface<T>
 		return 0;
 		// YOUR HOMEWORK CODE HERE
 	}
-   
-   
+
+    public void addToFront(ANode<T> first) {
+
+    }
+
+
+
 } // end AList
 

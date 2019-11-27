@@ -8,10 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        Comparable [] arr = {15,24,25,11,10,26,19,32};
+        Comparable [] arr = {};
 
-        quickSort(arr);
-//        System.out.println(sortedness(array));
+//        quickSort(arr);
+        System.out.println(sortedness(arr));
     }
 
     public static double sortedness(Comparable[] array) {

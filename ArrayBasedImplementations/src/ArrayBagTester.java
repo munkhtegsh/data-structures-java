@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class ArrayBagTester {
 	
@@ -28,7 +29,16 @@ public class ArrayBagTester {
 		wordBag.add("pear");
 		
 		System.out.println(numberBag.equals(wordBag));
-		
+
+
+		ListInterface<Integer> list = new AList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		System.out.println(Arrays.toString(list.toArray()));
+
+
+
 
 	}
 

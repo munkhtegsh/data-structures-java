@@ -17,6 +17,8 @@ public class Main {
         method(d);
     }
 
+
+
     public static void method(NodePlayground firstNode) {
         NodePlayground secondNode = firstNode.next;
         NodePlayground currentNode = secondNode;
@@ -36,4 +38,6 @@ public class Main {
 
 
     }
+
+
 }
